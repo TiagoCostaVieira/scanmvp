@@ -48,7 +48,7 @@ class SHELL():
                 for port in ports:
                     self.output_text.insert('end', f"Porta {port} ({ports[port]['name']}): {ports[port]['state']}\n")
 
-        self.output_text.insert("'end', 'Varredura da rede concluída.\n'")
+        self.output_text.insert('end', 'Varredura da rede concluída.\n')
         self.output_text.see('end')
 
     def start(self):
