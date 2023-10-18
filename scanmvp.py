@@ -37,7 +37,7 @@ class SHELL():
         self.output_text.insert('end', "Iniciando varredura da rede...\n")
 
         nm = nmap.PortScanner()
-        nm.scan(hosts='192.168.0.1/24', arguments='-p 22-80')
+        nm.scan(hosts='IP_ADRESS/24', arguments='-p 22-80')
 
         for host in nm.all_hosts():
             self.output_text.insert('end', f"Host: {host}\n")
